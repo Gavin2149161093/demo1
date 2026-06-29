@@ -7,8 +7,8 @@
 import markdown
 from pathlib import Path
 
-MD_PATH = Path(__file__).parent / "2026-06-29-AI-Daily.md"
-HTML_PATH = Path(__file__).parent / "2026-06-29-AI-Daily.html"
+MD_PATH = Path(__file__).parent / "2026-06-30-AI-Daily.md"
+HTML_PATH = Path(__file__).parent / "2026-06-30-AI-Daily.html"
 
 md_text = MD_PATH.read_text(encoding="utf-8")
 
@@ -121,7 +121,7 @@ html_doc = f"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI 行业每日热点深度简报 · 2026-06-29</title>
+<title>AI 行业每日热点深度简报 · 2026-06-30</title>
 <style>{CSS}</style>
 </head>
 <body>
@@ -130,7 +130,7 @@ html_doc = f"""<!DOCTYPE html>
 {meta_html}
 {html_body}
   </div>
-  <div class="foot">Generated from <code>2026-06-29-AI-Daily.md</code> · AI Daily Briefing · Week-27</div>
+  <div class="foot">Generated from <code>2026-06-30-AI-Daily.md</code> · AI Daily Briefing · Week-27</div>
 </div>
 </body>
 </html>
