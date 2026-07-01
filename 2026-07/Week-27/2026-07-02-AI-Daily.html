@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 行业每日热点深度简报 · 2026-07-02</title>
+<style>
+:root{
+  --bg:#f6f8fa; --surface:#ffffff; --fg:#1f2328; --muted:#656d76;
+  --border:#d0d7de; --accent:#0969da; --accent-2:#1f6feb; --accent-soft:#ddf4ff;
+  --quote-bg:#f6f8fa; --code-bg:#f6f8fa; --tag-bg:#eaeef2;
+  --card-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.05);
+  --card-hover-shadow:0 8px 24px rgba(9,105,218,.14),0 2px 6px rgba(0,0,0,.06);
+  --bar-grad:linear-gradient(90deg,#0969da,#4aa3ff);
+  --src-bg:#0969da; --src-fg:#ffffff;
+  --conf-bg:#fff8d6; --conf-fg:#7a5c00; --conf-border:#f1d57a;
+  --insight-bg:linear-gradient(180deg,#eef6ff,#f6fbff);
+  --insight-border:#0969da;
+  --label-bg:#eef4ff; --label-fg:#0a3d91; --label-border:#cfe3ff;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0d1117; --surface:#161b22; --fg:#e6edf3; --muted:#8b949e;
+    --border:#30363d; --accent:#4493f8; --accent-2:#388bfd; --accent-soft:#15283b;
+    --quote-bg:#0d1117; --code-bg:#0d1117; --tag-bg:#21262d;
+    --card-shadow:0 1px 2px rgba(0,0,0,.4),0 8px 22px rgba(0,0,0,.45);
+    --card-hover-shadow:0 10px 28px rgba(68,147,248,.22),0 2px 6px rgba(0,0,0,.5);
+    --src-bg:#1f6feb; --src-fg:#ffffff;
+    --conf-bg:#3a2f12; --conf-fg:#ffd75e; --conf-border:#5a4716;
+    --insight-bg:linear-gradient(180deg,#0d1f33,#101a2b);
+    --insight-border:#4493f8;
+    --label-bg:#16243a; --label-fg:#9ec5ff; --label-border:#23395e;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",
+    "Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px; line-height:1.75; word-wrap:break-word; overflow-wrap:anywhere;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:860px; margin:32px auto; padding:40px 44px;
+  background:var(--surface); border:1px solid var(--border); border-radius:16px;
+  box-shadow:var(--card-shadow);
+}
+.report-meta{
+  background:var(--accent-soft); border:1px solid var(--border);
+  border-left:4px solid var(--accent); border-radius:10px;
+  padding:14px 18px; margin:0 0 22px; color:var(--fg); font-size:.95em;
+}
+.report-meta p{margin:0 0 6px;} .report-meta p:last-child{margin-bottom:0;}
+h1{font-size:2em; margin:.2em 0 .5em; font-weight:750; line-height:1.25;
+  border-bottom:2px solid var(--border); padding-bottom:.3em; letter-spacing:-.01em;}
+/* 模块标题：左侧 5px 蓝色竖条 */
+h2.module-title{
+  font-size:1.45em; margin:1.8em 0 1em; font-weight:700; line-height:1.3;
+  padding:.25em 0 .25em .7em; border-left:5px solid var(--accent);
+  background:linear-gradient(90deg,var(--accent-soft),transparent);
+  border-radius:0 8px 8px 0;
+}
+h2{font-size:1.45em; margin:1.8em 0 1em; font-weight:700;}
+h3{font-size:1.18em; margin:1.3em 0 .6em; font-weight:650;}
+p{margin:0 0 14px;}
+a{color:var(--accent); text-decoration:none;}
+a:hover{text-decoration:underline;}
+strong{font-weight:680;}
+hr{height:1px; border:0; background:var(--border); margin:2em 0;}
+code{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  font-size:.88em; background:var(--code-bg); padding:.15em .4em; border-radius:5px;
+  color:var(--fg); word-break:break-word;}
+pre{background:var(--code-bg); border:1px solid var(--border); border-radius:8px;
+  padding:14px 16px; overflow:auto; margin:0 0 16px;}
+pre code{background:none; padding:0; font-size:.85em; line-height:1.5;}
+table{border-collapse:collapse; width:100%; margin:0 0 16px; display:block; overflow:auto;}
+table th,table td{border:1px solid var(--border); padding:8px 12px; text-align:left;}
+table th{background:var(--quote-bg); font-weight:680;}
+ul,ol{margin:0 0 14px; padding-left:1.6em;} li{margin:3px 0;}
+img{max-width:100%;}
+
+/* 新闻卡片 */
+.news-card{
+  position:relative; background:var(--surface); border:1px solid var(--border);
+  border-radius:12px; padding:18px 20px 16px; margin:0 0 18px; overflow:hidden;
+  box-shadow:var(--card-shadow); transition:transform .18s ease, box-shadow .18s ease;
+}
+.news-card::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:4px;
+  background:var(--bar-grad);
+}
+.news-card:hover{transform:translateY(-3px); box-shadow:var(--card-hover-shadow);}
+.news-header{font-size:1.06em; font-weight:700; line-height:1.45; margin:2px 0 12px;
+  color:var(--fg);}
+.news-body p{margin:0 0 12px;}
+.news-body p:last-child{margin-bottom:0;}
+/* 标签徽章 */
+.label-badge{display:inline-block; font-size:.82em; font-weight:650;
+  background:var(--label-bg); color:var(--label-fg);
+  border:1px solid var(--label-border); padding:3px 10px; border-radius:999px;
+  margin:0 0 10px; letter-spacing:.02em;}
+/* 页脚 meta */
+.news-meta{margin-top:6px;}
+.badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:4px;}
+.badge{display:inline-flex; align-items:center; font-size:.8em; font-weight:650;
+  padding:4px 12px; border-radius:999px; line-height:1.4; word-break:break-word;}
+.badge-source{background:var(--src-bg); color:var(--src-fg);}
+.badge-conf{background:var(--conf-bg); color:var(--conf-fg); border:1px solid var(--conf-border);}
+
+/* 维度补充说明 / note-card */
+.note-card{
+  background:var(--accent-soft); border:1px dashed var(--border);
+  border-left:4px solid var(--accent); border-radius:10px;
+  padding:12px 16px; margin:0 0 20px;
+}
+.note-title{font-weight:700; margin-bottom:6px; color:var(--fg);}
+.note-body p{margin:0 0 8px;} .note-body p:last-child{margin-bottom:0;}
+
+/* 趋势点评洞察区：淡蓝渐变背景 + 左侧 5px 蓝色粗边框 */
+.insight-section{
+  background:var(--insight-bg); border:1px solid var(--border);
+  border-left:5px solid var(--insight-border); border-radius:12px;
+  padding:18px 22px; margin-top:1.6em;
+}
+.insight-section h2{margin-top:.2em;}
+.insight-section h3{color:var(--accent-2);}
+
+.foot{margin-top:28px; padding-top:16px; border-top:1px solid var(--border);
+  font-size:.82em; color:var(--muted); text-align:center;}
+
+@media (max-width:768px){
+  .wrap{margin:0; padding:22px 16px; border-radius:0; box-shadow:none;}
+  h1{font-size:1.55em;}
+  h2,h2.module-title{font-size:1.2em;}
+  .news-card{padding:16px 14px;}
+  .news-header{font-size:1em;}
+  .insight-section{padding:14px 14px;}
+  .badge{font-size:.74em;}
+  pre,table{max-width:100%;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1 id="ai">AI 行业每日热点深度简报</h1>
+<div class="report-meta">📅 日期：2026-07-02（周四）｜ ISO 周数：Week-27<br />
+🗂 覆盖区间：过去 24 小时（亚洲/上海时区），以 2026-07-01 全天事件为主<br />
+🎯 覆盖维度：产品发布 / 融资并购 / 技术突破 / 标准规范 / 就业市场 / 商业化生态</div>
+<hr />
+<h2 id="international" class="module-title">🌍 一、国际动态（International）</h2>
+<article class="news-card"><header class="news-header">🔹 1. Anthropic Launches Claude Sonnet 5, Closing the Gap with Flagship Opus 4.8 at 40% of the Price（Anthropic 发布 Claude Sonnet 5：中端性能逼近旗舰 Opus 4.8，定价仅为其 40%）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（产品发布 + 商业化维度）7 月 1 日 Anthropic 正式发布中端主力模型 Claude Sonnet 5，主打"最具代理能力的 Sonnet"。在 SWE-bench Pro 取得 63.2%（前代 Sonnet 4.6 为 58.1%、旗舰 Opus 4.8 为 69.2%），并在 GDPval-AA v2 知识工作基准以 1618 分反超 Opus 4.8 的 1615 分，中端模型首次在部分基准上追平甚至超过自家旗舰。</p><p>优惠期 API 定价为输入 2 美元 / 输出 10 美元（每百万 token），8 月 31 日后恢复 3/15 美元，仅为 Opus 4.8 价格的约 40%。Cursor、Zapier 等早期合作方反馈其在多步骤任务可靠性显著提升，标志着中端模型进入"旗舰级能力 + 普惠定价"的新竞争区间。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：Anthropic 官方 / 新浪财经</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐⭐（5/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 2. Anthropic Lifts Export Controls on Claude Fable 5 / Mythos 5, Restoring Access Next Day（Anthropic 解除 Claude Fable 5 / Mythos 5 出口管制，次日恢复访问）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（标准与规范维度）6 月初被美国政府要求限制外国公民访问、随后下线的两款顶级模型 Fable 5 与 Mythos 5，于 7 月 1 日宣布解除出口管制并恢复可用。</p><p>此举与 Mythos 5 获批向美国关键基础设施机构开放形成一致信号，前沿模型在"政府审批式限流部署"阶段的监管摩擦出现阶段性缓和，也间接缓解了盟友对过度依赖美国闭源模型的技术主权担忧。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：X @AnthropicAI / 橘鸦 AI 早报</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐（4/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 3. OpenAI Finds New Way to Cut Inference Costs by Over 50% for Guest ChatGPT（OpenAI 发现新推理成本削减方案：访客版 ChatGPT 响应成本降低超 50%）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（商业化与生态维度）The Information 报道，OpenAI 找到新方法将推理开销砍掉一半以上，已应用于 Guest ChatGPT（免登录访客版）用户。</p><p>叠加 6 月底 GPT-5.6 系列进入分阶段有限预览，OpenAI 正走向"低成本 + 渐进放量"双轨路线，反映推理经济性正成为继模型能力之后的第二核心战场，直接影响 C 端免费层的可持续性与企业级 Token 成本曲线。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：The Information</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐（4/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 4. Google Rolls Out Nano Banana 2 Lite (Gemini Image Flash-Lite) for Speed and Cost（Google 推出 Nano Banana 2 Lite 即 Gemini 图像 Flash-Lite 版，主打速度与成本）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（产品发布维度）Google DeepMind 发布 Gemini 图像矩阵的 Flash-Lite 版本 Nano Banana 2 Lite，定位高速、低成本的轻量图像生成。</p><p>该版本与 Pro 版形成"高质量创作 + 大规模低成本生成"双轨，进一步完善从旗舰到普惠的完整用例覆盖，对标 OpenAI 与 Anthropic 在多模态生成上的中低端卡位。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：Google DeepMind Blog</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐⭐（5/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 5. Anthropic Unveils Claude Science Research Workbench and Claude Desktop Linux Beta（Anthropic 推出科研 AI 工作台 Claude Science 与 Claude 桌面版 Linux beta）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（产品与生态维度）Anthropic 上线面向科研人员的专用工作台 Claude Science（已上线 claude.com/science），并同步推出 Claude 桌面端 Linux beta，强化 Coding/Agent 一体化体验。</p><p>这是继 Sonnet 5 与高端模型解禁之后，Anthropic 同日第三波动作，显示其正从"模型供应商"向"垂直工作流平台"延伸生态护城河，直接争夺科研与开发者桌面。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：Anthropic 官方</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐⭐（5/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 6. Microsoft Reportedly Planning Thousands More Layoffs Amid AI-Driven Cost Control, Shares Down ~17% in Past Month（微软据报将再裁数千人、AI 驱动成本管控，过去一个月股价跌约 17%）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（就业市场维度）Business Insider 7 月 1 日援引知情人士称，微软正持续推进成本控制，新一轮裁员预计影响数千个岗位、占约 22 万员工总数的不到 2.5%，涉及销售与咨询部门，Xbox 游戏部门亦有波及，最早可能下周宣布。</p><p>此前 4 月微软已启动超 8000 人的自愿买断计划，去年两轮合计裁撤约 1.5 万人。AI 主管 Mustafa Suleyman 2 月曾称 AI 有望在 12—18 个月内取代大部分白领工作；市场担忧 AI 颠覆软件服务，叠加巨额 AI 资本开支，微软股价过去一月跌约 17%。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：Business Insider / 新浪财经（橙柿互动）</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐（4/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 7. 55% of Employers Regret AI-Related Layoffs as U.S. Financial &amp; Info Sectors Lose 28K Jobs a Month（55% 雇主对 AI 相关裁员感到后悔，美国金融与信息行业月均减员 2.8 万）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（就业市场维度，宏观趋势）7 月 1 日数据显示，55% 雇主对 AI 相关裁员决策感到后悔，52% 人力资源负责人在裁员后 6 个月内启动重新招聘，32.7% 受访企业已回聘此前裁撤岗位中 25%—50% 的人员；Klarna 此前裁撤 700 人后被承认决策过度导致服务质量下降。</p><p>与此同时，2026 年美国金融活动与信息行业就业人数下降步伐加快至平均每月 2.8 万个岗位，恰是 AI 普及最快的两个行业；Challenger 数据显示今年以来已宣布 AI 相关裁员近 10.2 万人。AI 对就业的"结构性置换"已开始在美国就业数据中刻下印记，"先裁后招"的反复正在暴露决策失误成本。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：新浪财经 / 环球市场播报（Bloomberg）/ Challenger Gray&amp;Christmas</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐⭐（5/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 8. Higgsfield AI in Talks to Raise $300M–$500M at $5B Pre-Money Valuation, 4x Jump（AI 视频创企 Higgsfield 洽谈融资 3—5 亿美元，投前估值 50 亿美元、较年初翻 4 倍）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（融资并购维度）知情人士透露，AI 视频生成初创公司 Higgsfield 正与投资方洽谈募资 3 亿至 5 亿美元，本轮融资前估值达 50 亿美元，较今年 1 月一轮估值翻约 4 倍；该公司本月年化营收已达 5 亿美元、较 1 月的 2 亿美元翻倍，70% 使用量来自企业客户。</p><p>尤里·米尔纳创立的 DST Global 有意参与。此举反映 AI 视频赛道投资热度持续攀升（同期 Runway 估值约 53 亿美元），资本正从通用大模型向具备稳定 B 端订单的垂直生成赛道集中。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：环球市场播报（Bloomberg）/ The Information</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐（4/5）</span></div></footer></article>
+<div class="note-card"><div class="note-title">📌 维度补充说明</div><div class="note-body"><p>技术突破维度今日国际侧暂无 24 小时内新增重磅论文或基座架构发布，主要延续 6 月底 GPT-5.6 限流预览与 OpenAI GeneBench-Pro 基准的配套研究产出；融资并购维度的次要信号包括专用推理芯片创企 Etched 累计完成 8 亿美元融资、签约超 10 亿美元合同（押注 Transformer 专用 ASIC 路线），反映推理算力需求被持续看多但属行业延续性事件。</p></div></div>
+<hr />
+<h2 id="china" class="module-title">🇨🇳 二、国内动态（China）</h2>
+<article class="news-card"><header class="news-header">🔹 1. DeepSeek V4 正式版定档 7 月中旬上线，国产大模型首引&quot;峰谷定价&quot;机制（DeepSeek V4 Pro/Flash 百万上下文 + Hybrid Attention，高峰时段 API 翻倍）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（产品发布 + 商业化维度）6 月 29 日 DeepSeek 向全体 API 开发者发送升级通知，正式官宣 V4 正式版将于 7 月中旬上线，并同步引入"峰谷定价"机制——这是国产大模型首次引入类似电力、云计算行业的分时计费模式，高峰时段（工作日 9—12、14—18 时）API 价格翻倍。</p><p>V4-Pro 总参数 1.6 万亿、激活 490 亿，V4-Flash 总参数 2840 亿、激活 130 亿，均原生支持 100 万 token 上下文、MIT 开源；Hybrid Attention 使百万 token 推理计算量仅为前代 V3.2 的 27%，DSpark 推理加速框架实测 V4-Flash 提速 60%—85%。即便高峰翻倍，V4-Pro 输出价 12 元/百万 token 也仅为 GPT-5.5（30 美元）的约 1/14，标志大模型 API 从"烧钱圈地"走向"精细化商业运营"，定价权时代来临。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：DeepSeek 官方开发者通知 / 36 氪 / 科技媒体</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐⭐（5/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 2. 华为开源 openPangu-2.0-Flash，昇腾生态再加码（盘古团队开源 Flash 版本，推进&quot;国产芯片 + 国产模型&quot;深度适配）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（技术突破 + 标准规范维度）华为盘古团队开源 openPangu-2.0-Flash 版本，继续推进"国产芯片 + 国产模型"深度适配，配合昇腾算子级优化。</p><p>这是继 DeepSeek V4 全面基于华为昇腾 950PR 训练之后，国产算力—模型协同闭环的又一落子，进一步强化"中国芯片 + 中国模型"的自主可控生态，呼应了近期法国、加拿大等国对 AI 技术主权多元化的诉求。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：GitCode 昇腾部落 (ascend-tribe) / openPangu 开源仓库</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐（4/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 3. InternScience 开源 35B Agents-A1，押注 Agent 专用基座（继 Hugging Face&quot;按硬件筛选模型&quot;后，中型开源 Agent 模型丰富生态）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（技术突破维度）InternScience 推出 35B 规模、面向 Agent 场景的中型开源模型 Agents-A1，继 Hugging Face 推出"按硬件筛选模型"功能后，进一步丰富 Agent 基座生态。</p><p>该模型瞄准"对话型 LLM"与"操作系统级执行体"之间的中间层，与豆包、Kimi、智谱等长程 Agent 路线形成开源侧补充，标志国内开源竞争焦点从"参数军备"转向"Agent 工程化能力"。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：HuggingFace / GitHub</span><span class="badge badge-conf">置信度：⭐⭐⭐⭐（4/5）</span></div></footer></article>
+<article class="news-card"><header class="news-header">🔹 4. 月之暗面（Kimi）启动新一轮融资，投前估值升至 315 亿美元（资本对中国头部大模型 DeepSeek、Kimi、智谱持续加注）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>（融资并购维度）科技媒体披露，月之暗面（Kimi）启动新一轮融资，投前估值从此前约 200 亿美元区间跳升至 315 亿美元。</p><p>这与 Kimi 4 月 ARR 突破 2 亿美元、K2.6 引入 Agent Swarm 架构（单次会话可调度 300 个子 Agent、4000 步执行）的进展相互印证，反映资本市场对中国头部大模型（DeepSeek、Kimi、智谱）的持续加注；腾讯亦于 6 月确认参投 DeepSeek 首轮外部融资，国产"基模第一梯队"估值进入加速重估期。</p></div><footer class="news-meta"><span class="label-badge">📰 来源与置信度</span><div class="badges"><span class="badge badge-source">📰 来源：科技媒体披露 / 中信建投研报</span><span class="badge badge-conf">置信度：⭐⭐⭐（3/5）</span></div></footer></article>
+<div class="note-card"><div class="note-title">📌 维度补充说明</div><div class="note-body"><p>就业市场维度今日国内侧暂无 24 小时内重大裁员/扩招或高管变动新闻（字节梁汝波全员信更新领导力原则、智谱港股异动等为 6 月末事件延续）；标准与规范维度今日国内侧暂无新增立法，主要为既定进程延续。商业化与生态维度由 DeepSeek 峰谷定价充分覆盖。</p></div></div>
+<hr />
+<section class="insight-section"><h2 id="_1">三、📊 今日趋势点评（主编洞察）</h2>
+<h3 id="_2">🌟 核心标志事件</h3>
+<p>今日最值得关注的两件事均来自 Anthropic：Claude Sonnet 5 以仅旗舰 40% 的价格在多项基准追平甚至反超 Opus 4.8，并将"中端旗舰化"确立为新一档竞争区间；同日 Fable 5 / Mythos 5 出口管制解除，则释放出"政府审批式限流部署"出现阶段性缓和的信号。</p>
+<h3 id="_3">🔗 国内外联动与差异</h3>
+<p>国际侧由 Anthropic"全家桶更新 + OpenAI 推理降本"主导，节奏集中在模型分层与推理经济性；国内侧则由 DeepSeek 峰谷定价与华为、InternScience 开源落地主导，核心叙事是"商业闭环 + 国产算力 + 开源生态"。两者方向不同但底层逻辑趋同——都从"卷能力"转向"卷成本与商业化可持续性"，且都在为 8 月 2 日欧盟 AI Act 全面生效前抢占定价与生态卡位。</p>
+<h3 id="12">🔮 未来 1—2 周前瞻</h3>
+<p>预计未来两周 DeepSeek V4 正式版上线将触发国内 API 定价的连锁反应（豆包、通义、智谱的峰谷或分层策略可能跟进），同时 Anthropic Sonnet 5 优惠期定价会倒逼 OpenAI、Google 中端档重新校准。风险提示：微软新一轮裁员与"AI 洗白式裁员"若与服务指标恶化叠加，可能引发美股 AI capex"信任链"二次重定价；欧盟 AI Act 大限临近也将使跨国企业合规成本显性化，需重点关注 8 月初的高风险系统合规与出口管制波动。</p></section>
+  <div class="foot">Generated from <code>2026-07-02-AI-Daily.md</code> · AI Daily Briefing · Week-27</div>
+</div>
+</body>
+</html>
