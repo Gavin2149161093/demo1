@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI 行业每日热点深度简报 · 2026-08-01</title>
+<style>
+:root{
+  --bg:#f6f8fa; --surface:#ffffff; --text:#1f2328; --muted:#656d76;
+  --border:#d0d7de; --accent:#2563eb; --accent2:#60a5fa;
+  --card-bar:linear-gradient(90deg,#2563eb,#60a5fa);
+  --insight-bg:linear-gradient(135deg,#eff6ff,#f0f9ff);
+  --code-bg:#f6f8fa; --shadow:0 6px 24px rgba(0,0,0,.06);
+  --badge-src-bg:#2563eb; --badge-src-fg:#fff;
+  --badge-conf-bg:#f59e0b; --badge-conf-fg:#fff;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0d1117; --surface:#161b22; --text:#e6edf3; --muted:#9198a1;
+    --border:#30363d; --accent:#60a5fa; --accent2:#93c5fd;
+    --card-bar:linear-gradient(90deg,#60a5fa,#3b82f6);
+    --insight-bg:linear-gradient(135deg,#0b1a2e,#0f2233);
+    --code-bg:#161b22; --shadow:0 6px 24px rgba(0,0,0,.4);
+    --badge-src-bg:#1d4ed8; --badge-conf-bg:#b45309;
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:24px 16px; background:var(--bg); color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",
+    "Hiragino Sans GB","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased;
+}
+.container{
+  max-width:860px; margin:0 auto; background:var(--surface);
+  border-radius:16px; box-shadow:var(--shadow);
+  padding:36px 40px; border:1px solid var(--border); overflow:hidden;
+}
+@media (max-width:640px){
+  .container{padding:22px 18px; border-radius:12px}
+  body{padding:12px 8px}
+  .news-card{padding:16px 16px 14px}
+  h1{font-size:1.4rem}
+  h2{font-size:1.15rem}
+}
+h1{font-size:1.7rem; margin:0 0 10px; line-height:1.35; word-break:break-word}
+h2{font-size:1.3rem; margin:34px 0 16px; line-height:1.4; word-break:break-word}
+h3{font-size:1.08rem; margin:22px 0 10px}
+p{margin:10px 0}
+a{color:var(--accent); text-decoration:none}
+code{
+  background:var(--code-bg); padding:2px 6px; border-radius:5px;
+  font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  font-size:.9em; border:1px solid var(--border);
+}
+.module-title{border-left:5px solid var(--accent); padding-left:12px}
+.insight-title{border-left:none; padding-left:0; margin-top:0}
+/* 新闻卡片 */
+.news-card{
+  position:relative; background:var(--surface);
+  border:1px solid var(--border); border-radius:12px;
+  padding:18px 20px 16px; margin:16px 0;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);
+  transition:transform .18s ease, box-shadow .18s ease;
+  overflow:hidden;
+}
+.news-card::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:4px;
+  background:var(--card-bar); border-radius:12px 12px 0 0;
+}
+.news-card:hover{transform:translateY(-3px); box-shadow:0 10px 28px rgba(37,99,235,.12)}
+.news-header{font-weight:700; font-size:1.06rem; margin:4px 0 10px; line-height:1.45}
+.news-body p{margin:8px 0}
+.label-badge{
+  display:inline-block; font-size:.78rem; font-weight:700;
+  color:var(--accent); background:rgba(37,99,235,.1);
+  padding:2px 9px; border-radius:20px; margin:0 0 6px;
+}
+.news-meta{margin-top:12px; display:flex; flex-wrap:wrap; gap:8px}
+.badge{
+  display:inline-flex; align-items:center; gap:4px;
+  font-size:.78rem; padding:4px 11px; border-radius:20px;
+  font-weight:600; line-height:1.4; word-break:break-word;
+}
+.badge-source{background:var(--badge-src-bg); color:var(--badge-src-fg)}
+.badge-conf{background:var(--badge-conf-bg); color:var(--badge-conf-fg)}
+.note-card{
+  background:var(--insight-bg); border:1px solid var(--border);
+  border-left:5px solid var(--accent2); border-radius:10px;
+  padding:14px 16px; margin:18px 0; color:var(--text); font-size:.95rem;
+}
+blockquote{
+  border-left:4px solid var(--border); margin:14px 0; padding:6px 14px;
+  color:var(--muted); background:var(--code-bg); border-radius:0 8px 8px 0;
+}
+.insight-section{
+  background:var(--insight-bg); border:1px solid var(--border);
+  border-left:5px solid var(--accent); border-radius:12px;
+  padding:8px 22px 18px; margin:30px 0;
+}
+hr{border:none; border-top:1px solid var(--border); margin:28px 0}
+.foot{color:var(--muted); font-size:.85rem; text-align:center; margin-top:24px}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>AI 行业每日热点深度简报 · 2026-08-01（周六）</h1>
+<blockquote>覆盖范围：产品发布 · 融资并购 · 技术突破 · 行业标准 · 就业市场 · 商业化生态</blockquote>
+<blockquote>数据窗口：过去 24–72 小时 | 编制日期：2026-08-01 | ISO 周：Week-31</blockquote>
+</section>
+<hr/>
+<h2 class="module-title">🌍 一、国际动态（International）</h2>
+<article class="news-card"><header class="news-header">EU AI Act Article 50 Transparency Rules Take Full Effect August 2（欧盟《人工智能法》第 50 条透明度条款 8 月 2 日全面生效）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>欧盟委员会 7 月 31 日宣布，自 8 月 2 日起扩大《人工智能法》适用范围，开始执行面向用户的透明度义务（第 50 条）及针对通用人工智能（GPAI）模型提供商的相关规则。新规要求：聊天机器人等交互式 AI 必须告知用户其正与 AI 而非人类互动；AI 生成或修改的图像、视频、音频等深度伪造内容必须作出标识，并带有机器可读标记；面向公共利益的 AI 生成文本须披露 AI 属性；情感识别与生物特征分类系统须告知被分析者。欧洲人工智能办公室同步获得对 GPAI 提供商的执法权，对可能造成系统性风险的先进 GPAI 模型施加额外义务以防范网络攻击、模型失控等大规模危害。违反第 50 条最高可被处以 1500 万欧元或全球年营业额 3% 的罚款，且具域外效力，任何向欧盟用户提供服务的企业均受管辖。</p></div><footer class="news-meta"><span class="badge badge-source">📰 新华社 / 欧盟委员会公报 / informedclearly</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐⭐（5/5）</span></footer></article>
+<article class="news-card"><header class="news-header">OpenAI Slashes GPT-5.6 Luna Price by 80%, Terra by 20% as "Token Price War" Intensifies（OpenAI 大砍 GPT-5.6 Luna 价格 80%、Terra 20%，"Token 价格战"升温）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>OpenAI 7 月 31 日宣布大幅下调两款最新模型价格：GPT-5.6 Luna 价格下调 80%，Terra 下调 20%，距两款模型公开发布仅约三周。调整后 Luna API 定价为每百万输入 Token 0.20 美元、输出 1.20 美元；Terra 为每百万输入 2 美元、输出 12 美元，Sol 定价与 ChatGPT/Codex 订阅价格不变。此举背景是企业客户对 AI 账单成本愈发敏感——"疯狂刷 Token"时代结束，多家公司主动控制支出，同时开源权重模型快速崛起、性能逼近闭源头部。月之暗面 Kimi K3、Anthropic Claude Opus 5（价格仅为 Fable 5 一半）、谷歌 Gemini 3.6 Flash（单次任务成本低于 Kimi K3）接连以高性价比模型施压，硅谷被迫快速反应。OpenAI 称核心战略仍是同步提升模型能力与运行效率。</p></div><footer class="news-meta"><span class="badge badge-source">📰 凤凰网财经（财联社）/ xofu / Google AI Changelog</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐⭐（5/5）</span></footer></article>
+<article class="news-card"><header class="news-header">US EO 14409 Classified Frontier-Model Benchmark Statutory Delivery Window Hits August 1（美国 EO 14409 涉密前沿模型基准 8 月 1 日法定交付窗口到期）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>8 月 1 日是美国涉密前沿模型基准的法定交付窗口。2026 年 5 月初签署的 EO 14409 第 3 节规定 60 天交付期，要求 NSA 与 CISA 完成涉密基准与自愿审查框架，并可能涉及对开源模型与中国模型的豁免条款。此前白宫两次取消签署仪式、节奏被多次推迟，引发业界对"窗口期是否顺延"的猜测。基准一旦落地，将给出可执行的"前沿模型"定义、自愿审查边界，以及开源/中国模型是否享有豁免的明确清单，直接影响 OpenAI、Anthropic、谷歌 DeepMind 等前沿厂商在美运营的合规成本。同期国会层面已有多部配套立法推进：7 月 23 日众议员 Obernolte 与 Trahan 提出《FRONTIER 法案》建立分级联邦监管与第三方审计，同日 Lieu 与 Moran 提出《AI Kill Switch 法案》要求大型 AI 开发商建设紧急关停机制。</p></div><footer class="news-meta"><span class="badge badge-source">📰 老蒙聚焦（头条）/ Info-Tech Research Group / 白宫公开行程</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐（4/5）</span></footer></article>
+<article class="news-card"><header class="news-header">OpenAI &amp; Anthropic Privately Lobby Washington to Restrict Chinese Open-Weight AI; Kimi K3 Tops Arena AI Web-Dev Ranking（OpenAI 与 Anthropic 私下游说华盛顿限制中国开源权重 AI；Kimi K3 登顶 Arena AI 网页开发榜）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>据《纽约时报》7 月 25 日报道，OpenAI 与 Anthropic 高管及投资人私下游说华盛顿监管机构限制中国开源权重模型，倾向于以"逐案国家安全审查"而非一刀切禁令处理。此前行业公开信呼吁避免对开源权重 AI 过早设限，OpenAI 于周五晚间补签使签名方达 32 家，谷歌 CEO Sundar Pichai 周六公开表态支持，Anthropic 则未签署。Anthropic 将中国蒸馏定性为"知识产权盗窃与工业间谍"，并向参议院银行委员会指控阿里对其发起最大规模蒸馏攻击；白宫科技政策办公室主任 Kratsios 称有信息显示月之暗面用 Anthropic Fable 模型开发 Kimi K3。外部排名支撑监管焦点：Arena AI 将 Kimi K3 列为网页开发任务第一、智能体任务第四，Artificial Analysis 智能指数排第三，紧追 Claude Fable/Opus 4.8 与 GPT-5.6。</p></div><footer class="news-meta"><span class="badge badge-source">📰 The New York Times / Business Insider / implicator.ai</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐（4/5）</span></footer></article>
+<article class="news-card"><header class="news-header">Fireworks AI Closes $1.5B Series D at $17.5B Valuation（Fireworks AI 完成 15 亿美元 D 轮融资，估值 175 亿美元）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>7 月 15 日，AI 推理服务平台 Fireworks AI 完成 15.05 亿美元 D 轮融资，投后估值达 175 亿美元，由 Atreides Management、Index Ventures、TCV 领投。公司定位为面向智能体工作负载的高吞吐推理基础设施，正承接企业从"调用单一模型"向"运行多智能体长程任务"迁移带来的流量激增。本轮是 2026 年 AI 基础设施赛道最大单笔融资之一，反映资本对"模型层之下、应用层之上"的推理与编排中间层押注升温，与 GitLab 同期融资用于"代际重建以支撑智能体工作流"逻辑一致。</p></div><footer class="news-meta"><span class="badge badge-source">📰 SQ Magazine AI Funding Tracker / Fireworks AI 官方博客</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐⭐（5/5）</span></footer></article>
+<article class="news-card"><header class="news-header">Etched Raises $300M at $10.3B Valuation to Scale Sovereign AI Inference Chips（Etched 完成 3 亿美元融资，估值 103 亿美元，红杉领投押注自主推理芯片）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>7 月 23 日，AI 推理芯片创企 Etched 完成 3 亿美元融资，投后估值 103 亿美元，由红杉资本领投。公司主打专为 Transformer 推理定制的 SoHU 芯片，宣称单卡吞吐显著优于通用 GPU，瞄准"推理算力替代英伟达"的结构性机会。本轮是 2026 年 AI 芯片赛道继 Cerebras、Tenstorrent 之后的又一重磅融资，与 AMD-Anthropic 2GW MI450 订单、Etched 押注"专用推理硅"共同指向同一趋势：前沿模型成本下行并未削弱算力需求，反而把推理算力推为新的稀缺资源，资本正沿"训练算力→推理算力→专用推理芯片"链条前移。</p></div><footer class="news-meta"><span class="badge badge-source">📰 SQ Magazine AI Funding Tracker / Etched 官方</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐⭐（5/5）</span></footer></article>
+<article class="news-card"><header class="news-header">Atoms Lands $1.7B from a16z for Humanoid Robotics; Meshy Raises ~$400M Series B for AI 3D（Atoms 获 a16z 17 亿美元押注人形机器人；Meshy 完成约 4 亿美元 B 轮加码 AI 3D）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>7 月 22 日，人形机器人创企 Atoms 完成 17 亿美元股权投资，由 Andreessen Horowitz 领投，公司未披露估值；同日安全智能体创企 Glow 完成 1.8 亿美元融资（估值 12 亿美元）。7 月 21 日，AI 3D 资产生成平台 Meshy 完成近 4 亿美元 B 轮融资，估值 15 亿美元，为 AI 3D 赛道迄今最大单轮融资。三笔融资密集落地于同一周，显示资本正从大语言模型向具身智能、安全智能体、3D 资产等"垂直落地+物理世界"赛道分散下注，与国内逐际动力、曦诺未来等具身智能独角兽批量涌现形成跨洋呼应。</p></div><footer class="news-meta"><span class="badge badge-source">📰 SQ Magazine AI Funding Tracker / Atoms / Meshy 官方公告</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐⭐（5/5）</span></footer></article>
+<article class="news-card"><header class="news-header">Futurum/Stanford Research: No Economy-Wide AI Jobs Shock, but a Narrow Entry-Level Squeeze（Futurum/斯坦福研究：未现全经济 AI 就业冲击，但入门级岗位被挤压）</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>Futurum Research 7 月 22 日发布报告指出，ChatGPT 上线三年半、采用速度超越任何可比技术后，美英欧宏观劳动力数据仍未出现全经济范围的 AI 就业冲击，当前的招聘放缓更多是周期性而非自动化驱动，AI 常被当作普通裁员的"体面解释"。唯一真实效应集中在最易暴露职业的入门档：斯坦福发现 22–25 岁人群相对招聘下降 13–16%，英国政府数据显示暴露岗位招聘广告下降 38%。关键反证：在真实付费自由职业任务中，最优智能体仅 2.5% 项目达到客户可接受标准（Scale AI/CAIS），企业级实测生产力增益约 1%，瓶颈已从模型能力转向集成与采购。Futurum 预判 AI 长期将扩张而非收缩劳动力市场，但若入门档挤压沿资历阶梯上移，乐观判断将弱化。</p></div><footer class="news-meta"><span class="badge badge-source">📰 Futurum Research / Stanford / Scale AI-CAIS</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐（4/5）</span></footer></article>
+</section>
+<hr/>
+<h2 class="module-title">🇨🇳 二、国内动态（China）</h2>
+<article class="news-card"><header class="news-header">DeepSeek-V4-Flash 正式版 API 上线公测，Agent 能力反超自家 Pro 预览版</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>7 月 31 日下午，DeepSeek 官网更新 API 文档，DeepSeek-V4-Flash-0731 正式版开放公测，这是 V4 系列自 4 月 24 日预览版发布以来的首次重大升级。官方称正式版在 Agent 能力上大幅增强，多项基准远超 V4-Pro-Preview：Terminal Bench 2.1 得 82.7、Cybergym 76.7、Toolathlon Verified 70.3，长程软件工程基准 DeepSWE 拿到 54.4（接近 Claude Opus 4.8 的 59，高于 GLM-5.2 的 44），综合跑分位于 GLM-5.2 与 Kimi K3 之间，进入国产模型第一梯队。模型结构与尺寸和预览版完全一致（总参 2840 亿、激活 130 亿），提升仅来自重新后训练；原生支持 Responses API 并专门适配 Codex，支持 1M 上下文、最大输出 384K、思考/非思考双模式。本次更新仅限 Flash 版 API，App/Web 端与 V4-Pro 暂未更新，V4-Pro 正式版"将尽快发布"。这是 DeepSeek 完成首轮融资（超 74 亿美元、估值 500 亿美元）后的首次技术兑现。</p></div><footer class="news-meta"><span class="badge badge-source">📰 北京日报客户端 / 中关村在线 / DeepSeek 官方更新日志</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐⭐（5/5）</span></footer></article>
+<article class="news-card"><header class="news-header">字节跳动正式发布 Seedance 2.5 视频生成模型，单次 30 秒并支持多轮延长</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>7 月 31 日，字节跳动正式发布新一代视频生成模型 Seedance 2.5。相较年初 2.0 版本，单次生成时长从 15 秒翻倍至 30 秒，并支持多轮接续延长，可产出数分钟连贯的高质量视频，优化了镜头衔接与场景过渡，有效弱化"油腻感"。多模态参考能力全面升级：单次输入最多 30 张图片、10 段视频、10 段音频作为参考素材，新增白模、绿幕参考及视频局部编辑能力，支持精准时间戳控制定向编辑。模型已上线豆包、即梦、扣子、小云雀等字节旗下产品，API 将近期通过火山引擎面向企业开放；即梦同步推出连续包年/包月限时 6 折、包季 7 折活动。这是字节继豆包 2.0、Seedance 2.0 后在多模态生成赛道的又一次落子，与 MiniMax H3、可灵形成国产视频模型密集上新格局。</p></div><footer class="news-meta"><span class="badge badge-source">📰 字节跳动 Seed 博客 / 头条（AI 智能体周报）</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐⭐（5/5）</span></footer></article>
+<article class="news-card"><header class="news-header">7 月 31 日"国模扎堆上新"：MiniMax H3 视频模型、Gemini 3.5 Pro 上线竞技场</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>7 月最后一天成为国产大模型集中上新的节点：除 DeepSeek V4 Flash 与字节 Seedance 2.5 外，MiniMax 发布 H3 视频模型，谷歌 Gemini 3.5 Pro 同步上线竞技场（Arena）。多家厂商在同一天完成模型迭代，被社区戏称为"国模大日子"。这一密集上新节奏与海外 OpenAI 降价、Anthropic 推 Claude Opus 5、谷歌推 Gemini 3.6 Flash 形成跨洋共振，反映全球大模型竞赛已从"单点发布"进入"周更/双周更"的常态化高频迭代，模型保鲜期显著缩短，对工程交付速度与算力调度弹性提出更高要求。</p></div><footer class="news-meta"><span class="badge badge-source">📰 头条（国产模型上新盘点）/ LMSYS Arena</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐（4/5）</span></footer></article>
+<article class="news-card"><header class="news-header">新鉴智整合不足一年启动多轮裁员超 200 人，智驾行业加速出清</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>由原鉴智机器人与四维图新智驾团队于 2025 年 9 月底整合而成的新鉴智，自 2026 年 6 月底起启动多轮裁员：6 月底裁减数十人、7 月中旬与 100 余名员工协商离职、7 月底前再裁约 100 人，三批合计超 200 人，占整合初期约 700 人团队的近三成，超出原计划。调整覆盖北京、上海、杭州多地及算法、软件、测试等部门；高管亦动荡，CEO 单羿于 2–3 月离职，CTO 许鹏飞 7 月离职。资源明显向地平线征程 J6B 低阶方案倾斜，J6E/J6P 高中阶项目投入缩减，岚图 J6P 高阶项目已终止。同期福瑞泰克、知行科技均陷入"交付量增、营收下滑、毛利率逼近零"的盈利困境，禾多科技重组失败暂停研发、毫末智行停工放假，行业头部集中与出清同步显现。四维图新预计 2026 上半年净亏损 3.52 亿–5.02 亿元。</p></div><footer class="news-meta"><span class="badge badge-source">📰 凤凰网汽车（网通社）</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐⭐（5/5）</span></footer></article>
+<article class="news-card"><header class="news-header">月之暗面计划 8 月启动 500 亿美元估值 Pre-IPO 轮，赴港 IPO 在即</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>据 Bloomberg 与南华早报 7 月 19 日报道，月之暗面在 Kimi K3 发布后正以惊人速度融资：当前一轮即将关闭、估值 315 亿美元，并计划 8 月随即启动 Pre-IPO 轮、目标投前估值最高 500 亿美元，或为赴港 IPO 前最后一笔外部融资，上市可能于年内完成。公司同步在 8 月前完成拆除离岸红筹架构，为境内融资与整体上市铺路。支撑估值的是实打实的收入：截至 6 月 ARR 达 3 亿美元（3 月破 1 亿、5 月破 2 亿、6 月站稳 3 亿），Kimi K3 发布 48 小时内用户调用请求指数级增长，一度被迫暂停 C 端新用户付费订阅。但开源权重 AI 盈利模型仍是结构性难题——同行智谱去年净亏近 5 亿美元、MiniMax 亏 2.5 亿美元，500 亿美元估值能否经得起商业化经济学检验仍是真正考验。</p></div><footer class="news-meta"><span class="badge badge-source">📰 Bloomberg / Quartz / The Next Web / 南华早报</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐⭐（5/5）</span></footer></article>
+<article class="news-card"><header class="news-header">"商汤系"造富链爆发：32 家公司半年融资超 470 亿元，AI 财富效应从概念走向兑现</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>据 IT 桔子数据，截至 7 月 17 日，32 家"商汤系"公司在 2026 上半年共完成 28 笔融资、累计超 470 亿元人民币，覆盖 AI 芯片、智慧医疗、机器人、智能汽车、大模型、具身智能等几乎全部热门赛道，是上半年最引人注目的 AI 融资现象。商汤"1+X"战略是核心引擎：母公司聚焦生成式 AI 大模型，将芯片、医疗、机器人等业务以子公司独立融资。其中曦望（原大芯片部门独立）一年半累计融资 40 亿元、估值破百亿冲刺港股 IPO；商汤医疗 7 月完成超 1 亿美元 B 轮、估值破百亿人民币成为国内首个百亿级医疗世界模型公司并进入 Pre-IPO。同期具身智能赛道批量造独角兽：逐际动力 Pre-IPO 融近 2 亿美元（估值 150 亿元），曦诺未来 4 个月连融 3 轮共 15 亿元。AI 赛道财富效应正从"概念"走向"兑现"。</p></div><footer class="news-meta"><span class="badge badge-source">📰 头条（IT 桔子数据 / 新证财经投融资周报）</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐（4/5）</span></footer></article>
+<article class="news-card"><header class="news-header">智谱 GLM 路线图披露：下个版本无多模态，多模态能力要等 GLM 6</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>7 月 31 日消息，智谱 AI 透露 GLM 模型下一版本将不包含多模态能力，完整多模态能力需等到 GLM 6 才补齐。这与当前 DeepSeek V4 Flash 专攻文本与 Agent、暂不具备图片视频理解（需等 Pro 版）的策略形成对照，反映国产头部模型厂商在"单点能力深耕"与"全模态齐头并进"之间的差异化路线选择。智谱 GLM-5 旗舰（744B 总参、40B 激活）以 MIT 协议开源、训练完全基于华为昇腾 910B 未用英伟达 GPU，并已适配沐曦曦云 C 等七大国产芯片平台；其异步智能体强化学习算法被视为在真实编程场景表现卓越的底层逻辑。多模态延后也意味着在视频/图像生成赛道，字节 Seedance、MiniMax H3、可灵等专项模型仍将主导国内格局。</p></div><footer class="news-meta"><span class="badge badge-source">📰 头条（国产模型上新盘点）/ 智谱 AI 官方</span><span class="badge badge-conf">置信度 ⭐⭐⭐（3/5）</span></footer></article>
+<article class="news-card"><header class="news-header">字节组建"豆包办公"部门，AI 办公入口争夺进入组织化阶段</header><div class="news-body"><span class="label-badge">📝 摘要</span><p>继 7 月 30 日字节启动飞书与豆包产品整合、成立 ToB GTM 组织"创造力服务平台"后，豆包内部已组建"豆包办公"部门，推动豆包深度融入真实办公及协作流程、持续提升办公生产力。招聘平台已出现标注"豆包办公"的岗位，主招 AI 策略产品经理，负责豆包在智能办公与企业场景的产品功能及跨产品能力集成与规模化落地。由飞书产品团队深度参与开发的豆包企业版已在部分飞书客户内测，原生接入飞书文档/会议/群聊。这标志字节、阿里（千问办公整合 QoderWork/悟空/MuleRun）、腾讯（WorkBuddy 人机双写）的"AI 办公入口"三强决战从产品发布进入组织化、常态化运营阶段，企业 AI 竞争全面转向"谁能真正替企业完成工作"。</p></div><footer class="news-meta"><span class="badge badge-source">📰 头条（AI 智能体周报）/ 招聘平台公开岗位</span><span class="badge badge-conf">置信度 ⭐⭐⭐⭐（4/5）</span></footer></article>
+</section>
+<hr/>
+<section class="insight-section"><h2 class="insight-title">三、📊 今日趋势点评（主编洞察）</h2>
+<h3>🌟 核心标志事件</h3>
+<p>今日最具标志性的两条线索高度共振：一是 8 月 2 日欧盟 AI Act 第 50 条透明度义务全面生效，叠加 8 月 1 日美国 EO 14409 涉密前沿模型基准法定交付窗口到期，欧美监管在同一周内形成"透明度+安全审计"双轨收紧，全球 AI 治理从"框架表态"进入"可执行执法"阶段；二是 7 月 31 日 DeepSeek V4 Flash、字节 Seedance 2.5、MiniMax H3、Gemini 3.5 Pro 同日"扎堆上新"，与 OpenAI 同日宣布 GPT-5.6 Luna/Terra 降价最高 80% 形成"能力跃升+价格腰斩"的剧烈碰撞，标志全球模型竞赛已从"单点发布"进入"周更常态化"的高频迭代。</p>
+<h3>🔗 国内外联动与差异</h3>
+<p>国内外出现"治理同步、路径分叉"的联动格局。海外焦点集中于"监管收紧+算力军备+开源博弈"三角：欧盟用透明度义务建立执法先例、美国用涉密基准与《FRONTIER 法案》《AI Kill Switch 法案》立法巩固前沿模型准入，OpenAI/Anthropic 私下游说限制中国开源权重模型，而资本沿"推理算力→专用推理芯片"链条前移（Fireworks 175 亿、Etched 103 亿）。国内则由 DeepSeek V4 Flash 后训练跃升、字节 Seedance 2.5 视频生成、月之暗面 500 亿美元 Pre-IPO 与商汤系 470 亿融资集体爆发，把叙事拉回"开源生态+商业化兑现+财富效应"。差异在于：海外在前端模型准入收紧的同时加速基础设施与监管工具建设，国内则以高频迭代与开源/低成本对冲算力与地缘压力，但二者都被同一股"Agent 自主化+成本下行"浪潮推着走——OpenAI 降价 80% 与 DeepSeek Flash 输出每百万 Token 仅 2 元，正把"Token 单价"压成新的全球公共基准。</p>
+<h3>🔮 未来 1-2 周前瞻</h3>
+<p>未来 1–2 周需重点跟踪三件事：其一，8 月 2 日欧盟 AI Act 透明度义务生效后，出海企业的合规成本将显性化，未签署《透明度实践守则》者举证责任加重，AI 生成内容标识与聊天机器人披露将成为硬性合规红线，合规正从成本转为竞争力；其二，EO 14409 涉密基准与自愿审查框架若如期交付，将明确"前沿模型"定义与开源/中国模型豁免清单，叠加 GPT-5/GPT-6 据爆料可能 8 月同台亮相，监管窗口与新模型发布时间窗高度重叠，地缘与产品节奏或相互催化；其三，DeepSeek V4-Pro 正式版"将尽快发布"与月之暗面 8 月 Pre-IPO 轮启动，国产模型在 Agent 与视频生成赛道的密集上新或触发新一轮价格与生态战。风险提示：欧盟域外管辖与中美开源权重博弈可能催生"合规分裂"，企业需提前建设内容标识、过程审计与跨境数据治理体系，并把合规投入计入必要生产成本；同时需警惕入门级岗位挤压沿资历阶梯上移，若自动化率从 2.5% 快速攀升，劳动力市场的"温和震荡"预判将被重估。</p>
+</section>
+<hr/>
+<div class="note-card">📌 <strong>弹性原则说明</strong>：本简报覆盖过去 24–72 小时内可交叉验证的 AI 行业重大动态，按国际/国内双模块呈现。置信度依据来源权威性与多源交叉程度评定，⭐⭐⭐（3/5）及以下标注表示未经官方确认或单一渠道信息，仅供行业观察参考，不构成投资建议。如某维度今日无符合时效与重要性门槛的更新，将在模块内予以说明。</div>
+</div>
+</body>
+</html>
